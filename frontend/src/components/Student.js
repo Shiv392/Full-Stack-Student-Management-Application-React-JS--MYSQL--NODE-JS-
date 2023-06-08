@@ -41,7 +41,7 @@ function Student() {
     e.preventDefault();
     try{
 await axios.put('http://localhost:8000/user/update/'+ students.find(u => u.id===id).id || id,{
-    
+    id:id,
     name:name,
     course:course,
     fee:fee
